@@ -32,4 +32,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/azure:latest
+          tags: |
+            ghcr.io/${{ github.repository }}/my-image:latest
+            ghcr.io/${{ github.repository }}/my-image:${{ github.sha }}
